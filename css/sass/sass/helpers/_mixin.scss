@@ -1,0 +1,17 @@
+@mixin min{
+  @media(min-width:767px){
+    @content
+  }
+};
+@mixin minMedia{
+  @media(min-width:992px){
+    @content
+  }
+};
+@mixin overly{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

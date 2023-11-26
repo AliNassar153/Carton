@@ -1,0 +1,133 @@
+// start slider
+.slider{
+  blockquote{
+    font-size: 20px;
+    line-height: 1.7 ;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color:$p-color;
+    width: 80%;
+    margin: 30px auto;
+  }
+  img{
+    max-width: 100%;
+  }
+  .bullets{
+    text-align: center;
+    li{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-color: $mainColor;
+      border-radius: 50%;
+      border: 3px solid $mainColor;
+      cursor: pointer;
+    }
+    & .active,
+    & :hover{
+      background-color: $p-color;
+      border: 3px solid $h-color;
+    }
+  }
+}
+// end slider
+// start services
+.services{
+  .service-box{
+    @media #{$minMedium}{
+      float: $float-l;
+      width: (100% / 3);
+      &:not(:last-of-type){
+        padding-right: 20px;
+      }
+    }
+    @media #{$maxMobile}{
+      i{
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+    .service-title{
+      color: $h-color;
+      line-height: 1.8;
+      i{
+        font-size: 40px;
+        position: relative;
+        top: 7px;
+        right: 10px;
+      }
+    }
+    
+    p{
+      color: $p-color;
+    }
+    .link{
+      color: $mainColor;
+      text-decoration: none;
+    }
+
+  }
+}
+// end services
+// start player
+.players{
+  .player-box{
+    img{
+      max-width: 100%;
+    }
+    @media#{$minSmall}{
+      float: $float-l;
+      width: (100%/2);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    @media#{$minMedium}{
+      width: (100%/3);
+      text-align: $text-l;
+      margin-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media#{$minLarge}{
+      width: (100%/4);
+    }
+    @media#{$maxMobile}{
+      margin-bottom: 40px;
+    }
+    .player-title{
+      color: $h-color;
+      line-height: 1.8;
+      font-weight: normal;
+      span{
+        font-weight: bold;
+      }
+    }
+    p{
+      color: $p-color;
+    }
+    .link{
+      color: $mainColor;
+      text-decoration: none;
+    }
+  }
+}
+// end player
+// start pic
+.pic{
+  .pic-box{
+    float: $float-l;
+    width: (94%/3);
+    &:not(:last-of-type){
+      margin-right: 3%;
+    }
+    @media#{$maxMobile}{
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  img{
+    max-width: 100%;
+  }
+}
+// end pic

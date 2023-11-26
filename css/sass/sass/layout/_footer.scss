@@ -1,0 +1,124 @@
+.footer{
+  background-color: #F5F5F5;
+  padding-top: 30px;
+  margin-top: 50px; 
+  overflow: hidden;
+  .gallery, .info ,.contact{
+    float: $float-l;
+  }
+  .gallery{
+    @media #{$minSmall}{
+      width: 100%;
+    }
+    @media #{$minMedium}{
+      width: 50%;
+    }
+    .img-box{
+      overflow: hidden;
+      margin-bottom: 20px;
+      img{
+        @media #{$minSmall}{
+          float: $float-l;
+        }
+        width: 150px;
+        border: 2px solid $p-color;
+        border-radius: 12%;
+      }
+      .text{
+        @media #{$minSmall}{
+          float: $float-l;
+          margin-right: 15px;
+          margin-left: 15px;
+          width: calc(100% - 180px);
+        }
+        h3{
+          color: $mainColor;
+          margin: 20px 0 0px;
+        }
+        p{
+          color: $p-color;
+          line-height: 1.9;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  .info{
+    @media #{$minSmall}{
+      width: 50%;
+    }
+    @media #{$minMedium}{
+      width: 25%;
+    }
+    @media #{$maxMobile}{
+      margin-left: 30%;
+    }
+    ul{
+      color: $p-color;
+      line-height: 2;
+    }
+    h3{
+      color: $mainColor;
+    }
+    p{
+      color: $p-color;
+      margin-bottom: 0;
+    }
+    span{
+      color: $mainColor;
+    }
+  }
+  .contact{
+    @media #{$minSmall}{
+      width: 50%;
+    }
+    @media #{$minMedium}{
+      width: 25%;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea{
+      border: 2px solid $mainColor;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 13px;
+      width: 100%;
+    }
+    textarea{
+      height: 120px;
+    }
+    ::placeholder{
+      color: $p-color;
+    }
+  }
+  .section-title{
+    color:$mainColor;
+    font-weight: normal;
+  }
+  .copyright{
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 25px 0;
+    border-top: 1px solid $p-color;
+    color: $p-color;
+    .text{
+      float: $float-l;
+      width: 50%;
+      @media #{$maxMobile}{
+        text-align: center;
+        width: 100% ;
+        margin-bottom: 20px;
+      }
+    }
+    .author{
+      float: $float-l;
+      width: 50%;
+      text-align: $text-r;
+      @media #{$maxMobile}{
+        text-align: center;
+        width: 100% ;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
